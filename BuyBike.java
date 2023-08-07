@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BuyBike {
-    static void buyBike(Bike[] bikes, int bike_counter) {
+    void buyBike(Bike[] bikes, int bike_counter) {
         Scanner sc = new Scanner(System.in);
         System.out.println("======================= *** BUY A BIKE *** =======================");
         System.out.println();
@@ -37,6 +37,36 @@ public class BuyBike {
                 System.out.println("Bike Model: " + selectedBike.bike_model);
                 System.out.println("Bike Price: " + selectedBike.bike_price);
                 System.out.println("=============================================");
+
+                System.out.print("Enter the quantity you want to buy: ");
+                int quantity = sc.nextInt();
+
+                int totalBill = selectedBike.bike_price * quantity;
+                System.out.println("Quantity: " + quantity);
+                System.out.println("Total Bill: " + totalBill);
+
+                // Add any additional charges or taxes if applicable
+                // For example, you can implement functions to calculate GST or other charges.
+                // For this example, let's assume there are no additional charges.
+
+                // Payment Option (implementation is simplified for demonstration purposes)
+                System.out.println();
+                System.out.println("Select Payment Option:");
+                System.out.println("1. Cash");
+                System.out.println("2. Credit Card");
+                System.out.println("3. Debit Card");
+                int paymentOption = sc.nextInt();
+
+                // Confirm Payment
+                System.out.print("Confirm Payment (Y/N): ");
+                sc.nextLine();
+                String confirmPayment = sc.nextLine();
+
+                if (confirmPayment.equalsIgnoreCase("Y")) {
+                    System.out.println("Payment Successful!");
+                } else {
+                    System.out.println("Payment Cancelled.");
+                }
 
                 System.out.println();
                 System.out.println("Thank You for your purchase!");

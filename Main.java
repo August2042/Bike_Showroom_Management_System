@@ -20,6 +20,8 @@ public class Main {
         System.out.println();
         System.out.println("4].GET SHOWROOMS \t\t\t 5].GET EMPLOYEES \t\t\t 6].GET BIKES");
         System.out.println();
+        System.out.println("7].BUY A BIKE");
+        System.out.println();
         System.out.println("=============================== *** ENTER 0 TO EXIT *** ===============================");
 
     }
@@ -35,6 +37,7 @@ public class Main {
         int employees_counter = 0;
         int choice = 100;
         BuyBike buyBikeHandler = new BuyBike();
+        // BillGenerator billGenerator = new BillGenerator(); // Creating an instance of BillGenerator
 
         while (choice != 0) {
 
@@ -130,12 +133,17 @@ public class Main {
                         System.out.println("0].EXIT");
                         choice = sc.nextInt();
                         break;
+                     
                     default:
                         System.out.println("ENTER VALID CHOICE: ");
                         break;
                 }
             }
         }
+        System.out.println();
+        System.out.println("************* Thank you for using Bike Showroom Management System *********");
+        System.out.println();
+        System.out.println("*************************** VISIT AGAIN !!!! *********************************");
 
     }
 }

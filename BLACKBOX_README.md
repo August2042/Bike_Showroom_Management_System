@@ -1,39 +1,42 @@
-This is a bike showroom management system. It allows you to add showrooms, employees, and bikes. You can also get the details of each of them.
+This is a bike showroom management system. It allows users to add showrooms, employees, bikes, and buy bikes.
 
-Here are the steps on how to use the system:
+To run the program, first compile the code using the following command:
 
-1. Clone the repository.
-2. Open the project in IntelliJ IDEA.
-3. Run the `Main.java` file.
+```
+javac *.java
+```
 
-You will be presented with the main menu. You can choose from the following options:
+Then, run the program using the following command:
 
-* Add showroom
-* Add employee
-* Add bike
-* Get showrooms
-* Get employees
-* Get bikes
-* Exit
+```
+java Main
+```
 
-To add a showroom, enter `1` and follow the instructions. To add an employee, enter `2` and follow the instructions. To add a bike, enter `3` and follow the instructions. To get the details of a showroom, enter `4` and enter the showroom name. To get the details of an employee, enter `5` and enter the employee ID. To get the details of a bike, enter `6` and enter the bike ID. To exit the system, enter `0`.
+The program will then display a menu with the following options:
 
-Here is an example of how to add a showroom:
+1. Add Showrooms
+2. Add Employees
+3. Add Bikes
+4. Get Showrooms
+5. Get Employees
+6. Get Bikes
+7. Buy a Bike
+0. Exit
 
-1. Enter `1` to add a showroom.
-2. Enter the showroom name.
-3. Enter the showroom address.
-4. Enter the manager name.
-5. Enter the total number of employees.
-6. Enter the total number of bikes in stock.
+To select an option, enter the corresponding number and press Enter.
 
-The showroom will be added to the system.
+For example, to add a showroom, enter 1 and press Enter. You will then be prompted to enter the showroom name, address, manager name, total number of employees, and total number of bikes in stock.
 
-Here is an example of how to get the details of a showroom:
+Once you have entered all of the information, press Enter. The showroom will be added to the database.
 
-1. Enter `4` to get the details of a showroom.
-2. Enter the showroom name.
+To get a list of all of the showrooms, enter 4 and press Enter. You will then be displayed a list of all of the showrooms in the database.
 
-The details of the showroom will be displayed.
+To get a list of all of the employees, enter 5 and press Enter. You will then be displayed a list of all of the employees in the database.
 
-I hope this helps!
+To get a list of all of the bikes, enter 6 and press Enter. You will then be displayed a list of all of the bikes in the database.
+
+To buy a bike, enter 7 and press Enter. You will then be prompted to enter the bike number that you want to buy.
+
+Once you have entered the bike number, press Enter. The bike will be purchased and you will be given a receipt.
+
+To exit the program, enter 0 and press Enter.
