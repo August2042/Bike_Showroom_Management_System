@@ -45,9 +45,7 @@ public class BuyBike {
                 System.out.println("Quantity: " + quantity);
                 System.out.println("Total Bill: " + totalBill);
 
-                // Add any additional charges or taxes if applicable
-                // For example, you can implement functions to calculate GST or other charges.
-                // For this example, let's assume there are no additional charges.
+                 
 
                 // Payment Option (implementation is simplified for demonstration purposes)
                 System.out.println();
